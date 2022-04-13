@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link href="/css/forms.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Form made by Heudes Vinicius</h1>
+        <p><em>Project made to test my knowledge creating the necessary fields to create a form.</em></p>
+        <br>
+    </div>
+
+    <form>
+        <div>
+            <label> Name <input type="text" maxlength="15" id="name" required></label><br>     
+        </div><br>
+
+        <div>
+            <label> Email <br> <input type="email" id="email" required></label><br>  
+        </div><br>
+
+        <div>
+            <label>Age <span>(optional)</span> <br> <input type="text" id="age"></label><br>
+        </div><br>
+
+        <div>
+            <label>Which option best describes your current role?</label><br>
+            <select id="roles">
+                <option selected disabled value="">Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div><br>
+
+        <div>
+            <div class="ipt-align">
+                <input type="radio" name="recommend" class="ipt-radio">
+                <label>Definitely</label>
+            </div>
+            <div class="ipt-align">
+                <input type="radio" name="recommend" class="ipt-radio">
+                <label>Maybe</label>
+            </div>
+            <div class="ipt-align">
+                <input type="radio" name="recommend" class="ipt-radio">
+                <label>Not sure</label>
+            </div>
+        </div>
+
+        <div>
+            <label>What is your favorite feature of freeCodeCamp?</label><br>
+            <select id="features">
+                <option selected disabled value="">Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </div><br>
+
+                <label>What would you like to see improved?</label><label> (Check all that apply)</label><br><br>
+        <div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="frontend" id="frontend" class="ipt-check">
+                <label>Front-end Projects</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="backend" id="backend" class="ipt-check">
+                <label>Back-end Projects</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="data" id="data" class="ipt-check">
+                <label>Visualization</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="challenges" id="challenges" class="ipt-check">
+                <label>Challenges</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="opensource" id="open" class="ipt-check">
+                <label>Open Source Community</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="gitterhelp" id="gitter" class="ipt-check">
+                <label>Gitter help rooms</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="videos" id="videos" class="ipt-check">
+                <label>Videos</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="citymeetups" id="city" class="ipt-check">
+                <label>City Meetups</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="wiki" id="wiki" class="ipt-check">
+                <label>Wiki</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="forum" id="forum" class="ipt-check">
+                <label>Forum</label>
+            </div>
+            <div class="ipt-align">
+                <input type="checkbox" name="liked" value="additionalcourses" id="additional" class="ipt-check">
+                <label>Additional Courses</label>
+            </div><br>
+        </div>
+        
+
+        <div>
+            <label class="textcomment">Any comments or suggestions?</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
